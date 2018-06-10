@@ -1,5 +1,5 @@
 // This file should hold all the applications data in an array of objects like the example below
-
+//var array =
 // {
 //     name:"Ahmed",
 //     photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -16,4 +16,4 @@
 //         1
 //       ]
 //   }
-  
+//   module.exports = array;
