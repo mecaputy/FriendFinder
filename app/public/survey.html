@@ -2,15 +2,206 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FriendFinder</title>
+
+    <!-- bootstrap & js -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./apps/FriendFinder/app/data/friends.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 <body>
+    <div class="container">
+        <form>
+            <div>
+                <h2>Survey Questions</h2>
+            </div>
+            <hr>
+            <div>
+                <h3>About You</h3>
+            </div>
+            <div class="form-group">
+                <label for="name">Name(Required)</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="photo">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="photo">
+            </div>
 
+            <div>
+                <h3>Question 1</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q1">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 2</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q2">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 3</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q3">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 4</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q4">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 5</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q5">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 6</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q6">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 7</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q7">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 8</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q8">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 9</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q9">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <h3>Question 10</h3>
+            </div>
+            <div class="form-group">
+                <label for="Q10">Insert Questions</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block 'text-align: center'">Submit</button>
+
+            <hr>
+
+        </form>
+    </div>
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+    $(".btn").on('click', function (event) {
+        event.preventDefault();
+
+        var userInput = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: []
+        };
+
+        console.log(userInput)
+
+        $.post("/api/friends", userInput, function (data) {
+            ///create and if then to match and alert
+
+            $("#name").val("");
+            $("#photo").val("");
+        });
+
+    });
+
+
+</script>
