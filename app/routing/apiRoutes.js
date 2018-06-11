@@ -10,3 +10,5 @@ app.post("/api/friends", function(req, res){
     friendData.push(req.body);
 });
 };
+
+//add a function to check answers and return a result
