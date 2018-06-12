@@ -17,21 +17,23 @@ module.exports = function (app) {
         for (var i = 0; i < friendData.length; i++) {
             var compareScore = 0;
 
-            for (var j = 0; j < friendData.length; j++) {
-                compareScore += (Math.abs(friendData[i].scores[j] - parseInt(userInputScores[j])));
+            for (var j = 0; j < friendData[i].scores.length; j++) {
+                compareScore += (Math.abs(friendData[i].scores[j] - (userInputScores[j])));
 
             }
+
             scoreArr.push(compareScore);
         }
+
         var index = 0;
         var value = scoreArr[0];
-        for (var i = 1; i < scoreArr.length; i++) {
-            if (scoreArr[i] < value) {
-                value = scoreArr[i];
-                index = i;
+        for (var k = 1; k < scoreArr.length; i++) {
+            if (scoreArr[k] < value) {
+                value = scoreArr[k];
+                index = k;
             }
 
-            friendData.push(friendData[index]);
+            res.json(friendData[index]);
         }
     });
 };
@@ -40,8 +42,8 @@ module.exports = function (app) {
 
 
 //add a function to check answers and return a result
-  //conver user's results into a simple array of numbers
-  //comapate the difference between current user's score and other users question by question. add up the difference to calculate totalDifferece
+//conver user's results into a simple array of numbers
+//comapate the difference between current user's score and other users question by question. add up the difference to calculate totalDifferece
 
 //   Example: 
 // User 1: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
