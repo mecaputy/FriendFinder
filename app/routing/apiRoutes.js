@@ -1,13 +1,13 @@
 // This file should contain two routes 
 var friendData = require("../data/friends");
 //a GET route with the url /api/friends to display a JSON of all possible friends
-module.exports = function(app) {
-   
-    app.get("/api/friends", function(req, res) {
+module.exports = function (app) {
+
+    app.get("/api/friends", function (req, res) {
         res.json(friendData);
     });
-    
-    app.post("/api/friends", function(req, res){
+
+    app.post("/api/friends", function (req, res) {
 
 
         var userInputScores = req.body.scores;
@@ -15,20 +15,27 @@ module.exports = function(app) {
         var scoreArr = [];
 
         for (var i = 0; i < friendData.length; i++) {
-            var compareScore = [];
+            var compareScore = 0;
 
-            for (var j = 0; j < array.length; j++) {
+            for (var j = 0; j < friendData.length; j++) {
                 compareScore += (Math.abs(friendData[i].scores[j] - parseInt(userInputScores[j])));
-                
+
             }
             scoreArr.push(compareScore);
         }
+        var index = 0;
+        var value = scoreArr[0];
+        for (var i = 1; i < scoreArr.length; i++) {
+            if (scoreArr[i] < value) {
+                value = scoreArr[i];
+                index = i;
+            }
 
-        
-        friendData.push(req.body);
+            friendData.push(friendData[index]);
+        }
     });
-    };
-    
+};
+
 //a POST route /api/friends - this will be used to handle incoming survey results -- this route will also be used to handle the compatibility logic
 
 
